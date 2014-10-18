@@ -9,7 +9,7 @@
 ## Configure AWS command line tools
 
 You should create the following file : **~/.aws/config**
-```json
+```
 [default]
 output = json
 region = us-west-2
