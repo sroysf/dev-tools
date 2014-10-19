@@ -1,0 +1,32 @@
+#!/bin/bash
+
+usage () {
+	echo "USAGE: copyrepo <repo-url> <project-name>"
+	exit 1
+}
+
+if [ "$#" -lt 2 ]; then
+	usage
+fi
+
+REPO_URL=$1
+PROJECT_NAME=$2
+GIT_URL="git@github.com:sroysf/${PROJECT_NAME}.git"
+
+echo ${PROJECT_NAME}
+echo $REPO_URL
+echo $ARTIFACT_NAME
+
+git clone ${REPO_URL} ${PROJECT_NAME}
+pushd ${PROJECT_NAME}
+rm -rf .git/
+
+vi pom.xml
+
+git init
+git add src/
+git add .gitignore
+git add README.md
+git add pom.xml
+
+git remote add origin ${GIT_URL}
