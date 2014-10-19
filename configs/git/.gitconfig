@@ -1,0 +1,11 @@
+[user]
+	name = sroysf
+	email = saptarshi.roy@salesforce.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+	lc = log ORIG_HEAD.. --stat --no-merges
+	undo=reset --hard
+
+[diff]
+	external=git-meld
+

@@ -1,0 +1,16 @@
+export JAVA_HOME=$HOME/apps/jdk1.8.0
+
+export M2_HOME=$HOME/apps/apache-maven-3.0.5
+export MAVEN_OPTS="-Xmx4096M"
+export REPO=$HOME/.m2/repository
+export GRADLE_HOME=$HOME/apps/gradle-1.11
+export PATH=$HOME/bin:${JAVA_HOME}/bin:${GRADLE_HOME}/bin:${M2_HOME}/bin:$PATH
+
+[ -z "$TMUX" ] && export TERM=xterm-256color
+
+
+
+
+
+
+
