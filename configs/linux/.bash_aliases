@@ -16,6 +16,7 @@ alias newbranch='git checkout -b'
 alias delbranch='git branch -D'
 alias gitprune='git remote prune origin'
 alias listchanges='git diff $1 --name-only'
+alias cb='mvnt clean install'
 
 # MVN shortcuts
 
