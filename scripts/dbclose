@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sync
+umount /home/saptarshi.roy/private-files
+cryptsetup luksClose private-volume

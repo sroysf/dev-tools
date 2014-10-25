@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cryptsetup luksOpen /home/saptarshi.roy/private private-volume
+mount /dev/mapper/private-volume /home/saptarshi.roy/private-files
+

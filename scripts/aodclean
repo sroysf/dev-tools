@@ -1,0 +1,8 @@
+#!/bin/bash
+rm -rf ~/.m2/repository/com/salesforce/aod/
+pushd /home/saptarshi.roy/dev/Army-Of-Darkness-Demo-Application
+git pull origin master
+mvn clean install
+popd
+mvn clean install
+
