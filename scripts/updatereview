@@ -1,0 +1,7 @@
+#!/bin/bash
+
+REVIEW_ID=$1
+shift
+
+ccollab addgitdiffs ${REVIEW_ID} --no-ext-diff $@
+
