@@ -10,6 +10,7 @@ alias gs='git status'
 alias gc='git commit -a -m '
 alias gb='git branch -a | fgrep "*"'
 alias gba='git branch -a'
+alias gbame='git branch -a | grep sroy'
 alias gco='git checkout'
 alias gp='git push origin'
 alias newbranch='git checkout -b'
@@ -17,6 +18,7 @@ alias delbranch='git branch -D'
 alias gitprune='git remote prune origin'
 alias listchanges='git diff $1 --name-only'
 alias cb='mvnt clean install'
+alias cleansfdc='rm -rf ${REPO}/com/salesforce'
 
 # MVN shortcuts
 
